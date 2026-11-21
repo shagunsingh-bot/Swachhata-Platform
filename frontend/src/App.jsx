@@ -43,18 +43,18 @@ function App() {
       />
 
       {/* My Complaints */}
-     <Route
-  path="/dashboard/mycomplaints"
-  element={
-    <ProtectedRoute>
-      <MyComplaints />
-    </ProtectedRoute>
-  }
-/>
+      <Route
+        path="/dashboard/mycomplaints"
+        element={
+          <ProtectedRoute>
+            <MyComplaints />
+          </ProtectedRoute>
+        }
+      />
 
       {/* Analytics */}
       <Route
-        path="/analytics"
+        path="/dashboard/analytics"
         element={
           <ProtectedRoute>
             <Analytics />
@@ -64,7 +64,7 @@ function App() {
 
       {/* Rewards */}
       <Route
-        path="/rewards"
+        path="/dashboard/rewards"
         element={
           <ProtectedRoute>
             <Rewards />
@@ -74,7 +74,7 @@ function App() {
 
       {/* Profile */}
       <Route
-        path="/profile"
+        path="/dashboard/profile"
         element={
           <ProtectedRoute>
             <Profile />
@@ -84,7 +84,7 @@ function App() {
 
       {/* Settings */}
       <Route
-        path="/settings"
+        path="/dashboard/settings"
         element={
           <ProtectedRoute>
             <Settings />
